@@ -1,0 +1,45 @@
+/* Reset common GmanPark */
+
+html, body{ height:100%; }
+#ct{ min-height:100%; }
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, form, fieldset, p, button{ margin:0; padding:0; }
+body, input, select, textarea{ color:#000; font-family:'Malgun Gothic', '맑은 고딕', Helvetica, 'Apple SD Gothic Neo', Dotum, '돋움', sans-serif; font-size:87.5%; font-weight:normal; }
+img, fieldset{ border:0 none; }
+ul, ol, li{ list-style:none; }
+address, caption, cite, code, dfn, em, i, var{ font-style:normal; font-weight:normal; }
+h1, h2, h3, h4, h5, th{ font-weight:normal; }
+hr, legend, caption{ display:none; }
+a{ color:#000; text-decoration:none; text-overflow:ellipsis; -o-text-overflow:ellipsis; }
+a:link, a:hover, a:active{ text-decoration:none; }
+textarea{ resize:none; }
+blockquote, q{ quotes:none; }
+blockquote:before, blockquote:after, q:before, q:after{ content:''; content:none; }
+input:focus{ outline:none; }
+table{ border-spacing:0; border-collapse:collapse; table-layout:fixed; }
+:focus{ outline:0; }
+textarea, input[type="text"], input[type="number"], input[type="password"], input[type="button"], input[type="submit"], input[type="reset"], input[type="email"], input[type="srch"], input[type="tel"]{ -webkit-appearance:none; -webkit-border-radius:0; border:1px solid #ababab; }
+label, input[type="radio"], input[type="checkbox"]{ vertical-align:middle; }
+button{ *overflow:visible; overflow:hidden; background-color:transparent; border:none; cursor:pointer; text-align:center; }
+.blind, .skip{ visibility:hidden; overflow:hidden; position:absolute; left:-1000em; width:0; height:0; font-size:0; line-height:0; }
+/* Material Google Icon */
+@font-face{
+    font-family:'Material Icons';
+    font-style:normal;
+    font-weight:400;
+    src:local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v19/2fcrYFNaTjcS6g4U3t-Y5ZjZjT5FdEJ140U2DJYC3mY.woff2) format('woff2');
+}
+.material-icons{
+    font-family:'Material Icons';
+    font-weight:normal;
+    font-style:normal;
+    font-size:24px;
+    line-height:1;
+    letter-spacing:normal;
+    text-transform:none;
+    display:inline-block;
+    white-space:nowrap;
+    word-wrap:normal;
+    direction:ltr;
+    -webkit-font-feature-settings:'liga';
+    -webkit-font-smoothing:antialiased;
+}

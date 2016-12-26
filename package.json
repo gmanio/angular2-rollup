@@ -1,0 +1,9 @@
+{
+  "name": "angular2-rollup",
+  "version": "0.0.1",
+  "description": "liteweight angular2 app build",
+  "scripts": {
+  },
+  "author": "GmanPark",
+  "license": "MIT"
+}
