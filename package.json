@@ -7,7 +7,7 @@
     "serve": "http-server . -p 5557",
     "build": "tsc -p tsconfig.json",
     "rollup": "rollup -c rollup.config.js",
-    "ngc": "ngc -p tsconfig.json && cp app/* compiled",
+    "ngc2": "ngc -p tsconfig-aot.json && cp app/* compiled",
     "es5": "tsc --target es5 --allowJs dist/bundle.es2015.js --out dist/bundle.js",
     "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js",
     "build_prod": "npm run rollup && npm run es5 && npm run minify"

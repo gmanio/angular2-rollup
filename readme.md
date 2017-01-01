@@ -2,6 +2,8 @@
 
 for build simple & lightweight angular2 Application.
 
+1.4 MB -> 139kb (included gzip compress)
+
 > GmanPark @ 2016
 
 * * *
