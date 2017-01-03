@@ -2,7 +2,7 @@
 
 for build simple & lightweight angular2 Application.
 
-1.4 MB -> <span style="color: #f2cf4a; font-family: Babas; font-size: 2em;">51kb</span>
+1.4 MB -> <span style="color: #f2cf4a; font-family: Babas; font-size: 2em;"><h2>51kb</h2></span>
  (included gzip compress)
  
 GmanPark @ 2016
