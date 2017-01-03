@@ -21,6 +21,7 @@ textarea, input[type="text"], input[type="number"], input[type="password"], inpu
 label, input[type="radio"], input[type="checkbox"]{ vertical-align:middle; }
 button{ *overflow:visible; overflow:hidden; background-color:transparent; border:none; cursor:pointer; text-align:center; }
 .blind, .skip{ visibility:hidden; overflow:hidden; position:absolute; left:-1000em; width:0; height:0; font-size:0; line-height:0; }
+
 /* Material Google Icon */
 @font-face{
     font-family:'Material Icons';

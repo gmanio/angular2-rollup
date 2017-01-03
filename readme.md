@@ -2,7 +2,7 @@
 
 for build simple & lightweight angular2 Application.
 
-1.4 MB -> <span style="color: #f2cf4a; font-family: Babas; font-size: 2em;"><h2>only 51kb</h2></span>
+<h3>1.4 MB -></h3> <span style="color: #f2cf4a; font-family: Babas; font-size: 2em;"><h2>only 58kb</h2></span>
  (included gzip compress)
 ![lightweight ng2 app](complete.png "lightweight ng2 app")
  
