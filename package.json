@@ -4,14 +4,12 @@
   "description": "liteweight angular2 app build",
   "scripts": {
     "clean": "rm -rf dist",
-    "server": "http-server . -p 5557",
     "lite": "lite-server -c bs-config.js",
-    "build": "tsc -p tsconfig.json",
     "ngc": "ngc -p tsconfig-aot.json",
     "rollup": "rollup -c rollup.config.js",
     "es5": "tsc --target es5 --allowJs dist/bundle.rollup.js --out dist/bundle.js",
     "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js",
-    "build_prod": "npm run ngc && npm run rollup && npm run es5 && npm run minify"
+    "build": "npm run ngc && npm run rollup && npm run es5 && npm run minify"
   },
   "author": "GmanPark",
   "license": "MIT",
@@ -28,15 +26,12 @@
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "@types/core-js": "^0.9.35",
     "@types/node": "^6.0.55",
     "compression": "^1.6.2",
-    "http-server": "^0.9.0",
     "lite-server": "^2.2.2",
     "rollup": "^0.38.0",
     "rollup-plugin-commonjs": "^6.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
-    "rollup-plugin-typescript": "^0.8.1",
     "typescript": "^2.0.2",
     "uglify-js": "^2.7.5"
   }
