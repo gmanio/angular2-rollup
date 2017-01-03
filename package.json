@@ -7,7 +7,7 @@
     "serve": "http-server . -p 5557",
     "build": "tsc -p tsconfig.json",
     "rollup": "rollup -c rollup.config.js",
-    "es5": "tsc --target es5 --allowJs dist/bundle.es2015.js --out dist/bundle.js",
+    "es5": "tsc --target es5 --allowJs dist/bundle.rollup.js --out dist/bundle.js",
     "minify": "uglifyjs dist/bundle.js --screw-ie8 --compress --mangle --output dist/bundle.min.js",
     "build_prod": "npm run rollup && npm run es5 && npm run minify"
   },
@@ -24,12 +24,10 @@
     "zone.js": "^0.7.4"
   },
   "devDependencies": {
-    "ngc": "^1.0.0",
     "rollup": "^0.38.0",
     "rollup-plugin-commonjs": "^6.0.1",
     "rollup-plugin-node-resolve": "^2.0.0",
     "rollup-plugin-typescript": "^0.8.1",
-    "rollup-plugin-uglify": "^1.0.1",
     "typescript": "^2.1.4",
     "uglify-js": "^2.7.5"
   }

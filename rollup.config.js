@@ -9,12 +9,10 @@ import resolve from 'rollup-plugin-node-resolve';
 
 export default {
     entry: 'src/main.ts',
-    dest: 'dist/bundle.es2015.js',
+    dest: 'dist/bundle.rollup.js',
     format: 'iife',
-    sourceMap: true,
-    onwarn: function ( message ) {
-        return;
-    },
+    sourceMap: false,
+    moduleName: 'main',
     plugins: [
         resolve({
             jsnext: true,
@@ -25,6 +23,5 @@ export default {
         commonjs({
             include: 'node_modules/rxjs/**',
         }),
-        // uglify()
     ]
 }
