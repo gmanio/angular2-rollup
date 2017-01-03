@@ -3,16 +3,39 @@
     "target": "es2015",
     "module": "es2015",
     "moduleResolution": "node",
-    "sourceMap": false,
-    "experimentalDecorators": true,
+    "declaration": false,
     "removeComments": true,
-    "noImplicitAny": false
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": ["es6", "es2015", "dom"],
+    "sourceMap": true,
+    "pretty": true,
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitUseStrict": false,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./compiled",
+    "typeRoots": [
+      "./node_modules/@types",
+      "./node_modules"
+    ],
+    "types": [
+    ]
   },
-  "compileOnSave": false,
+  "angularCompilerOptions": {
+    "genDir": ".",
+    "debug": true
+  },
   "files": [
-    "src/main.ts"
+    "app/main.ts"
   ],
   "exclude": [
-    "node_modules"
-  ]
+    "node_modules",
+    "dist",
+    "src"
+  ],
+  "compileOnSave": false
 }

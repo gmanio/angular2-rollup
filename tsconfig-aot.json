@@ -6,20 +6,18 @@
     "sourceMap": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": [
-      "es2015",
-      "dom"
-    ],
+    "lib": ["es2015", "dom"],
     "noImplicitAny": true,
     "suppressImplicitAnyIndexErrors": true
   },
+
   "files": [
-    "src/main.ts"
+    "app/app.module.ts",
+    "app/main.ts"
   ],
+
   "angularCompilerOptions": {
     "genDir": "aot",
-    "skipMetadataEmit": true
-  },
-  "compileOnSave": false,
-  "buildOnSave": false
+    "skipMetadataEmit" : true
+  }
 }
