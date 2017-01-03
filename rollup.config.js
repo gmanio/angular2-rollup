@@ -4,11 +4,10 @@
  */
 
 import commonjs    from 'rollup-plugin-commonjs';
-import typescript from 'rollup-plugin-typescript';
 import resolve from 'rollup-plugin-node-resolve';
 
 export default {
-    entry: 'src/main.ts',
+    entry: 'app/main.ts',
     dest: 'dist/bundle.rollup.js',
     format: 'iife',
     sourceMap: false,
@@ -19,7 +18,6 @@ export default {
             main: true,
             browser: true
         }),
-        typescript(),
         commonjs({
             include: 'node_modules/rxjs/**',
         }),
